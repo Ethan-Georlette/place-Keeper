@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/map.css">
+</head>
+
+<body onload="initMap()">
+    <section class='navBar'>
+        <div class="user-profile"></div>
+    </section>
+    <section class="maps">
+        <div class="map" id="map"></div>
+        <button class="myPosition" onclick="onMyPosition()"></button>
+    </section>
+    <!-- map script  -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4C-BtvOg1KbRq95MtG3L6tcJV99ID22w"
+       async ></script>
+    <script src="js/map-main.js"></script>
+</body>
+
+</html>
