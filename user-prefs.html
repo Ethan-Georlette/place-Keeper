@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/user-pref.css">
+</head>
+
+<body>
+    <section class='navBar'>
+        <div class="user-profile"></div>
+    </section>
+    <section class="form-container">
+        <form class="pref-form">
+            <ul>
+                <li>
+                    <label for="name">What is Your Name</label>
+                    <input type="text" id="name">
+                </li>
+                <li>
+                    <label for="BGColor">Choose background color</label>
+                    <input type="color" id="BGColor" value="#ffffff"
+                        onchange="setExample(this.form.txtColor.value,this.value)">
+                </li>
+                <li>
+                    <label for="txtColor">Choose The text color</label>
+                    <input type="color" id="txtColor" onchange="setExample(this.value,this.form.BGColor.value)">
+                </li>
+                <li>
+                    <label for="date">Date of birth</label>
+                    <input type="date" id="date">
+                </li>
+                <li>
+                    <label for="time">Time of birth</label>
+                    <input type="time" id="time">
+                </li>
+                <input type="button" id="submit" value="submit" onclick="onSubmit(this.form)">
+        </form>
+    </section>
+
+    <div class="example">
+        <h1 contenteditable>This is an Example Text</h1>
+        <h2 contenteditable> You can change it</h2>
+    </div>
+    <section class="links">
+        <div class="to-Home">
+            <a href="index.html">Home</a>
+        </div>
+        <div class="to-map">
+            <a href="map.html">Map</a>
+        </div>
+    </section>
+    <script src="js/service/storageService.js"></script>
+    <script src="js/service/userPrefService.js"></script>
+    <script src="js/userPref-main.js"></script>
+</body>
+
+</html>

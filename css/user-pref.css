@@ -1,0 +1,11 @@
+.example{
+    height: 40vh;
+    width: 80vw;
+    margin: auto;
+    border: black 1px solid;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
